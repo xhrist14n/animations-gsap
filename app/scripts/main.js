@@ -1,21 +1,34 @@
 console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 
 
+var degrees = 30;
+
 $(
     function(){
-        var degrees = 5;
-        var tween = TweenMax.to(
+
+        TweenMax.to(
             ".arrow",
-            4,
+            1,
             {
-                rotation:360,
+                rotation: 360,
                 modifiers: {
                     rotation: function(rotation) {
                         return Math.round(rotation / degrees) * degrees;
                     }
                 },
-                ease: Linear.easeNone,
+                ease: Bounce.easeNone,
                 repeat:6000
+            }
+        );
+
+        TweenMax.to(
+            ".arrow",
+            1,
+            {
+                left:600,
+                repeat: 6000,
+                repeatDelay: 1,
+                yoyo: true
             }
         );
     }

@@ -23,7 +23,14 @@
     "gsap": {
       "main": [
         "src/uncompressed/TweenMax.js",
-        "src/uncompressed/plugins/ModifiersPlugin.js"
+        "src/uncompressed/jquery.gsap.js",
+        "src/uncompressed/utils/Draggable.js",
+        "src/uncompressed/plugins/ScrollToPlugin.js",
+        "src/uncompressed/plugins/ModifiersPlugin.js",
+        "src/uncompressed/plugins/ColorPropsPlugin.js",
+        "src/uncompressed/plugins/CSSRulePlugin.js",
+        "src/uncompressed/plugins/EaselPlugin.js",
+        "src/uncompressed/plugins/TextPlugin.js"
       ]
     }
   }
